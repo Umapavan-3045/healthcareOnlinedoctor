@@ -1,0 +1,17 @@
+.App{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-image: url("F:\healthCareOnlineDoctor\Frontend\healthcare\src\assets\backgroundHospital.jpg");
+}
+.copyright{
+  position: fixed;
+  bottom: 2px;
+  right: 20px;
+  color: darkgray;
+}

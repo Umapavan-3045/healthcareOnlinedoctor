@@ -1,0 +1,177 @@
+.calendar-container {
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .calendar-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .calendar-navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .current-week-indicator {
+    font-weight: bold;
+  }
+  
+  .nav-button {
+    background-color: #2db9a8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #289C8E;
+  }
+  
+  .disabled-button {
+    background-color: #ccc !important;
+    cursor: not-allowed !important;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .current-day {
+    font-weight: bold;
+    background-color: #5eb1f9; /* Light blue to highlight current day */
+  }
+  
+  .timeslot-label {
+    font-weight: bold;
+    background-color: #f8f9fa;
+  }
+  
+  .slot {
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .slot:hover {
+    transform: scale(1.05);
+  }
+  
+  .available {
+    background-color: rgb(69, 219, 92);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .blocked {
+    background-color: #c9302c; /* Darker red for blocked */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .booked {
+    background-color: #fa5842; /* Even darker red for booked */
+    color: white;
+  }
+  
+  .unavailable {
+    background-color: #6c757d; /* Grey for past and inherently unavailable */
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .past {
+    background-color: #e0e0e0; /* Lighter grey for past days */
+    color: #333;
+    cursor: not-allowed;
+  }
+  
+  .past-label {
+    display: block;
+    font-size: 0.8em;
+    color: #777;
+  }
+  
+  /* Loading and Error Styles */
+  .loading-container,
+  .error-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .loading-container {
+    background-color: #f0f8ff;
+    color: #6495ed;
+    border: 1px solid #add8e6;
+  }
+  
+  .error-container {
+    background-color: #ffebee;
+    color: #d32f2f;
+    border: 1px solid #ef9a9a;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .modal-button {
+    background-color: #289C8E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }

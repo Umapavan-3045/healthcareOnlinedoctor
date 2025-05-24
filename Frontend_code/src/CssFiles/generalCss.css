@@ -1,0 +1,148 @@
+.editProfile{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+.editProfile form{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    justify-content: space-evenly;
+    margin-left: 14%;
+}
+input{
+    width: 60%;
+}
+select{
+    width: 60%;
+}
+.sub{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+button{
+    width: 30%;
+    background-color: #289C8E;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.resetpassword{
+    background-color: white;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.resetpassword input{
+    width: 90%;
+}
+table {
+    width: 95%;
+    border-collapse: collapse; /* Success green */
+    border-bottom: 2px solid #289C8E; /* Border only at the bottom */
+  }
+  
+  thead {
+    background-color: #289C8E; /* Slightly darker success green */
+    color: #ffffff;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Line to differentiate columns */
+  }
+  
+  /* tbody td:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  tbody td:nth-child(even) {
+    background-color: #f2f2f2;
+  }   */
+  .medicalHistory{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  } 
+  .appointments{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  }
+
+  .navbuttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .navbuttons .btn1{
+      background-color: cornflowerblue;
+      padding: 10px;
+      border-radius: 10px;
+  }
+  .navbuttons .btn2{
+    background-color: rgb(237, 130, 100);
+  }
+  .navbuttons .btn3{
+    background-color: rgb(237, 100, 187);
+  }
+
+  .consultationdata tbody{
+    display: block;
+   max-height: 300px;
+   overflow-y: auto;
+  }
+  .consultationdata thead, .consultationdata tbody tr {
+    display: table;
+  width: 100%;
+  table-layout: fixed;
+  }
+  .Consultation{
+    width: 90%;
+    justify-content: left;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+  }
+  .patientConsultation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  

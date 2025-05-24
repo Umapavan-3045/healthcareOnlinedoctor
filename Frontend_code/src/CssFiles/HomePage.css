@@ -1,0 +1,117 @@
+/* HomePage.css */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  align-items: center;
+  padding: 20px;
+}
+
+.view-appointments-button {
+  padding: 12px 25px; /* Increased padding */
+  margin-bottom: 20px;
+  border: none;
+  background-color: #289C8E;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  border-radius: 8px; /* Smooth edges */
+}
+
+.view-appointments-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.dashboard {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  width: 85%; /* slightly bigger */
+  max-width: 700px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-backdrop .dashboard {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dashboard .close-button {
+  padding: 12px 25px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Smooth edges */
+}
+
+.dashboard .close-button:hover {
+  background-color: #cc0000;
+}
+
+.dashboard .appointments-list {
+  max-height: 450px; /* slightly more height */
+  overflow-y: auto;
+}
+
+.dashboard .appointment {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.dashboard .appointment.cancelled {
+  opacity: 0.5;
+}
+
+.dashboard button {
+  padding: 10px 20px;
+  margin-right: 8px;
+  border: none;
+  background-color: #289C8E;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Smooth edges */
+}
+
+.dashboard button:hover {
+  background-color: #289C8E;
+}
+
+.dashboard .update-button {
+  background-color: #28a745;
+}
+
+.dashboard .update-button:hover {
+  background-color: #218838;
+}
+
+.update-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}

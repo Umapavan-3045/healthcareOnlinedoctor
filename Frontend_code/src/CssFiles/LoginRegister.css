@@ -1,0 +1,198 @@
+.loginpage{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 30%;
+    height: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.switching{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: center;
+}
+.switching div{
+    margin-bottom: 20px;
+}
+.loginpage form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.loginpage form button{
+    width: 60%;
+    height: 15%;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #2FC4B2;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.loginpage form button:hover{
+    background-color: #289C8E;
+}
+.switching .switchingbuttons{
+    width: 30%;
+    flex-direction: row;
+    display: flex;
+}
+.switching .switchingbuttons button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.switchingbuttons .active {
+    background-color: #289C8E; /* Active button color */
+    color: white;
+}
+.switchingbuttons .inactive {
+    background-color: #f1f1f1; /* Inactive button color */
+    color: black;
+}
+
+input{
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+input:focus{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.signuppage{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    width: 60%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.signuppage .logindetails{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.signuppage .personaldetails{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.signuppage form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.signuppage .linedivide{
+    width: 1px;
+    height: 80%;
+    background-color: rgb(151, 151, 151);
+}
+.logindetails button{
+    width: 60%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #2FC4B2;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.logindetails button:hover{
+    background-color: #289C8E;
+}
+select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #289C8E;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.patientdetails{
+    height: 100%;
+    width: 100%;
+    gap:5px;
+    padding: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+}
+.patientdetails div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.patientdetails div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.radio{
+  box-shadow: none;
+  background-color: none;
+}
+.radio:focus{
+    box-shadow: none;
+    outline: none;
+}
+select:focus {
+    border-color: #2FC4B2;
+    box-shadow: 0 0 5px #289C8E;
+    outline: none;
+}
+.address{
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+}
+option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+.error{
+    color: crimson;
+    font: 0.7em sans-serif;
+}

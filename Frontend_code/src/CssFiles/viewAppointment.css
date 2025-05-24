@@ -1,0 +1,83 @@
+.appointmentdetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.appointment-card {
+    width: 90%;
+    justify-content: left;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+}
+
+.appointment-card:hover {
+    transform: scale(1.02);
+}
+
+.appointment-card p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.appointment-card strong {
+    color: #333;
+}
+
+.appointment-icon {
+    margin-right: 860px;
+    font-size: 24px;
+    color: #000000;
+}
+.tablecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white; /* Solid white background for the modal content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+.tablecontainer button{
+    background-color: rgb(253, 132, 46);
+}
+.tablecontainer .msg{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tablecontainer table tbody {
+    display: block;
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+  
+  .tablecontainer table thead, .tablecontainer table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .tablecontainer table {
+    width: 95%;
+    border-collapse: collapse;
+  }
+  
+  .tablecontainer table th, .tablecontainer table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  

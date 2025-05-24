@@ -1,0 +1,37 @@
+.tab{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+.notificationsMessages{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+    width: 25%;
+    text-align: left;
+    height: auto;
+    max-height: 400px ;
+    box-shadow: 0px 0px 2px;
+    align-items: center;
+}
+.notificationsMessages div{
+    overflow-y: auto;
+}
+.closetab{
+    margin-top: 10px;
+    width: 80%;
+}
+.divider {
+    border-bottom: 1px solid #757474; /* Adjust the color and thickness as needed */
+    margin: 10px 0; /* Optional: Add margin for spacing */
+}
+.view{
+    size: 50px;
+}

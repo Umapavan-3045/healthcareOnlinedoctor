@@ -1,0 +1,91 @@
+/* ConsultationForm.css */
+ 
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+ 
+  .modal-container {
+    background-color: white; /* Solid white background for the modal content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+  }
+ 
+  .modal-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+ 
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+ 
+  .form-input,
+  .form-textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ 
+  .form-textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+ 
+  .form-button {
+    background-color:green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+ 
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+ 
+  .cancel-button {
+    background-color: #dc3545;
+  }
+ 
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+ 
+  .disabled-button {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+ 
+  .success-message {
+    color: green;
+    margin-bottom: 10px;
+  }
+ 
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+ 

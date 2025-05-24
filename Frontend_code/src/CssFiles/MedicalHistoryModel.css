@@ -1,0 +1,104 @@
+.medical-history-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+ 
+  .medical-history-modal {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+  }
+ 
+  .modal-header {
+    padding: 1rem 1.5rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .modal-title {
+    margin-bottom: 0;
+    font-size: 1.5rem; /* Increased font size for title */
+    font-weight: 500;
+  }
+ 
+  .close-button {
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+    color: black;
+  }
+ 
+  .close-button:hover {
+    opacity: 1;
+  }
+ 
+  .modal-body {
+    padding: 1.5rem;
+  }
+ 
+  .medical-history-list { /* Styling for the bulleted list */
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 1.5rem; /* Add some indentation for the bullets */
+  }
+ 
+  .medical-history-list li {
+    font-size: 1.1rem; /* Increased font size for list items */
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+ 
+  .medical-history-list li:last-child {
+    border-bottom: none;
+  }
+ 
+  .large-text {
+    font-size: 1.2rem; /* Increased font size for the "no history" message */
+  }
+ 
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .medical-history-modal {
+      width: 95%;
+      margin: 1rem;
+    }
+ 
+    .modal-title {
+      font-size: 1.2rem;
+    }
+ 
+    .close-button {
+      font-size: 1.3rem;
+    }
+ 
+    .modal-body {
+      padding: 1rem;
+    }
+ 
+    .medical-history-list li {
+      font-size: 1rem;
+    }
+ 
+    .large-text {
+      font-size: 1.1rem;
+    }
+  }
+ 
